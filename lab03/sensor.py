@@ -10,4 +10,8 @@ sht=0
 for _ in range(kol):
     zap=input()
     vse+=1
-    
+
+    if zap=='error':
+        osh+=1
+        continue
+
