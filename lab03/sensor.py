@@ -25,10 +25,7 @@ for _ in range(kol):
     if tem > por:
         pre += 1
 
-    if sht>0:
-        sre = sum/sht
-    else:
-        sre=0.0
+    sre=sum/sht if sht >0 else 0.0
 
     print(vse)
     print(osh)
