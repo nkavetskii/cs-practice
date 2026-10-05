@@ -19,3 +19,6 @@ for _ in range(kol):
     sht += 1
     sum += tem
 
+    if mak is None or tem > mak:
+        mak = tem
+
