@@ -22,3 +22,6 @@ for _ in range(kol):
     if mak is None or tem > mak:
         mak = tem
 
+    if tem > por:
+        pre += 1
+
