@@ -15,3 +15,7 @@ for _ in range(kol):
         osh+=1
         continue
 
+    tem = float(zap)
+    sht += 1
+    sum += tem
+
