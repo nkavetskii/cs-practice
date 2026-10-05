@@ -27,9 +27,9 @@ for _ in range(kol):
 
     sre=sum/sht if sht >0 else 0.0
 
-    print(vse)
-    print(osh)
-    print(pre)
-    print(f"{mak:.1f}")
-    print(f"{sre:.1f}")
+print(vse)
+print(osh)
+print(pre)
+print(f"{mak:.1f}")
+print(f"{sre:.1f}")
 
