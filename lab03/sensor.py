@@ -30,3 +30,9 @@ for _ in range(kol):
     else:
         sre=0.0
 
+    print(vse)
+    print(osh)
+    print(pre)
+    print(f"{mak:.1f}")
+    print(f"{sre:.1f}")
+
