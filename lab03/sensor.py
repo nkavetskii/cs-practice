@@ -25,3 +25,8 @@ for _ in range(kol):
     if tem > por:
         pre += 1
 
+    if sht>0:
+        sre = sum/sht
+    else:
+        sre=0.0
+
