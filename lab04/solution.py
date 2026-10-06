@@ -9,3 +9,8 @@ def average(scores: list[float]) -> float:
     if not scores:
         return 0.0
     return round(sum(scores) / len(scores), 2)
+
+def ranking(names: list[str], scores: list[float]) -> list[str]:
+    indexed = list(enumerate(zip(names, scores)))
+    indexed.sort(key=lambda pair: pair[1][1], reverse=True)
+    return [name for _, (name, _) in indexed]
