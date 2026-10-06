@@ -3,7 +3,7 @@ kol=int(input())
 vse=0
 osh=0
 pre=0
-mak=None
+mak=-float('inf')
 sum=0.0
 sht=0
 
@@ -19,14 +19,14 @@ for _ in range(kol):
     sht += 1
     sum += tem
 
-    if mak is None or tem > mak:
+    if  tem > mak:
         mak = tem
 
     if tem > por:
         pre += 1
 
-    sre=sum/sht if sht >0 else 0.0
 
+sre=sum/sht if sht >0 else 0.0
 print(vse)
 print(osh)
 print(pre)
