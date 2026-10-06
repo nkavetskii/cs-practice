@@ -14,3 +14,10 @@ def ranking(names: list[str], scores: list[float]) -> list[str]:
     indexed = list(enumerate(zip(names, scores)))
     indexed.sort(key=lambda pair: pair[1][1], reverse=True)
     return [name for _, (name, _) in indexed]
+
+def above_average(names: list[str], scores: list[float]) -> list[str]:
+    avg = average(scores)
+    return [name for name, score in zip(names, scores) if score > avg]
+
+names=list(input())
+scores=list(input())
