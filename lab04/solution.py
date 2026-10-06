@@ -19,5 +19,4 @@ def above_average(names: list[str], scores: list[float]) -> list[str]:
     avg = average(scores)
     return [name for name, score in zip(names, scores) if score > avg]
 
-names=list(input())
-scores=list(input())
+
