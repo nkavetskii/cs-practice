@@ -19,4 +19,7 @@ def above_average(names: list[str], scores: list[float]) -> list[str]:
     avg = average(scores)
     return [name for name, score in zip(names, scores) if score > avg]
 
-
+if __name__=="__main__":
+    names=["Аня", "Боря","Вика"]
+    scores=[7.0,9.0,18.0]
+    print(above_average(names, scores))
