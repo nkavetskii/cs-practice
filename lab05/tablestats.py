@@ -54,3 +54,14 @@ def total_minutes(rows, kind):
     return round(total, 1)
 
 
+def to_csv(counts):
+    """
+    Сводка текстом CSV: заголовок, строки по алфавиту, перевод строки в конце.
+    """
+    lines = ["тип,количество"]
+    for key in sorted(counts.keys()):
+        lines.append(f"{key},{counts[key]}")
+
+    return "\n".join(lines) + "\n"
+
+
