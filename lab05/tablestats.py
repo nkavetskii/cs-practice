@@ -20,3 +20,11 @@ def read_rows(lines):
         rows.append(row_dict)
 
     return rows
+
+def count_types(rows):
+    counts = {}
+    for row in rows:
+        t = row.get("тип")
+        if t is not None:
+            counts[t] = counts.get(t, 0) + 1
+    return counts
