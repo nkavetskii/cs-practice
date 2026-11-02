@@ -7,4 +7,8 @@ def reshape_rows(values, width):
     arr = np.asarray(values, dtype=float)
     return arr.reshape(-1, width).tolist()
 
+def block(matrix, rows, columns):
+    arr = np.asarray(matrix, dtype=float)
+    return arr[np.ix_(rows, columns)].tolist()
+
 
